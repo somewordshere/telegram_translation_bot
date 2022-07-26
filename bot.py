@@ -3,7 +3,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import translators as ts
 import emojis
 
-token = "<ENTER_YOUR_TOKEN>"
+token = "1027715467:AAE-Ka8lXT1Zf7JAPu2exqlfi8hN9W48Yc8"
 bot = telebot.TeleBot(token)
 SERVICE = "google"
 LNG = 'english'
@@ -68,9 +68,9 @@ def translate(message):
     user_name = message.from_user.first_name
     chat_id = message.chat.id
     bot.reply_to(message, f"\U0001f44b {user_name}!\nThis bot can translate your messages!")
-    bot.send_message(chat_id, "Type /service to chose translation service!\nDefault is Google!")
-    bot.send_message(chat_id, "Type /lan select your translation language!")
-    bot.send_message(chat_id, "Type /info to see more information on supported languages!")
+    bot.send_message(chat_id, "Type /service to chose translation service! Default is Google!")
+    bot.send_message(chat_id, "Type /lan select your translation language! Default is English.")
+    bot.send_message(chat_id, "Type /info to see all supported languages!")
 
 
 # service command
@@ -89,8 +89,8 @@ def select(message):
 @bot.message_handler(commands=['info'])
 def translate(message):
     bot.reply_to(message, "\U0001f916This bot autodetects the given language!\nCurrently, we support these "
-                          "languages: \U0001f1fa\U0001f1f8, \U0001f1ea\U0001f1ea, "
-                          "\U0001f1eb\U0001f1f7, \U0001f1e9\U0001f1ea, \U0001f1ee\U0001f1f9, \U0001f1ef\U0001f1f5, "
+                          "languages: \U0001f1fa\U0001f1f8/\U0001f1ec\U0001f1e7, "
+                          "\U0001f1eb\U0001f1f7, \U0001f1ef\U0001f1f5, "
                           "\U0001f1f5\U0001f1f1, \U0001f1fa\U0001f1e6")
 
 
