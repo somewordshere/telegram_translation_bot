@@ -1,0 +1,44 @@
+#code for country emojis
+
+\U0001f1fa\U0001f1f8 - USA
+\U0001f1ec\U0001f1e7 - UK
+#\U0001f1ea\U0001f1ea - Estonia
+\U0001f1eb\U0001f1f7 - France
+\U0001f1e9\U0001f1ea - Germany
+#\U0001f1ee\U0001f1f9 - Italy
+\U0001f1ef\U0001f1f5 - Japan
+\U0001f1f5\U0001f1f1 - Poland
+#\U0001f1f0\U0001f1f7 - South Korea
+#\U0001f1f9\U0001f1f7 - Turkey
+\U0001f1fa\U0001f1e6 - Ukraine
+
+
+
+# language select
+@bot.callback_query_handler(func=lambda call: True)
+def l_callback_query(call):
+    global LAN
+    if call.data == "english":
+        bot.answer_callback_query(call.id, "\U0001f1fa\U0001f1f8/\U0001f1ec\U0001f1e7 selected")
+        LAN = str(call.data)
+    elif call.data == "french":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "german":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "japanese":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "polish":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "s_koren":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "turkish":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
+    elif call.data == "ukrainian":
+        bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
+        LAN = str(call.data)
