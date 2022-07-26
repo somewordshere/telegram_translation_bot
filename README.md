@@ -5,3 +5,4 @@
 
 # INFO:
 Telegram bot for messages translation. Supports [Google Translate](translate.google.com) and [Deepl](deepl.com). It autodetects languages, currently translates to _English, French, German, Japanese, Polish and Ukrainian._
+Google Translate and English are set as default settings.
