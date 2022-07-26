@@ -43,7 +43,7 @@ def s_callback_query(call):
         bot.answer_callback_query(call.id, "Deepl selected")
         SERVICE = str(call.data)
     elif call.data == "english":
-        bot.answer_callback_query(call.id, "\U0001f1fa\U0001f1f8/\U0001f1ec\U0001f1e7 selected")
+        bot.answer_callback_query(call.id, "\U0001f1fa\U0001f1f8 selected")
         LNG = str(call.data)
     elif call.data == "french":
         bot.answer_callback_query(call.id, "\U0001f1eb\U0001f1f7 selected")
@@ -89,8 +89,8 @@ def select(message):
 @bot.message_handler(commands=['info'])
 def translate(message):
     bot.reply_to(message, "\U0001f916This bot autodetects the given language!\nCurrently, we support these "
-                          "languages: \U0001f1fa\U0001f1f8/\U0001f1ec\U0001f1e7, "
-                          "\U0001f1eb\U0001f1f7, \U0001f1ef\U0001f1f5, "
+                          "languages: \U0001f1fa\U0001f1f8, \U0001f1eb\U0001f1f7, "
+                          "\U0001f1e9\U0001f1ea, \U0001f1ef\U0001f1f5, "
                           "\U0001f1f5\U0001f1f1, \U0001f1fa\U0001f1e6")
 
 
